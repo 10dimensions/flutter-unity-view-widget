@@ -7,10 +7,14 @@ public class Rotate : MonoBehaviour, IEventSystemHandler
     [SerializeField]
     Vector3 RotateAmount;
 
+    [SerializeField]
+    float RotateValue;
+
     // Start is called before the first frame update
     void Start()
     {
         RotateAmount = new Vector3(0, 0, 0);
+        RotateValue = 0;
     }
 
     // Update is called once per frame
@@ -39,6 +43,15 @@ public class Rotate : MonoBehaviour, IEventSystemHandler
     public void SetRotationSpeed(String message)
     {
         float value = float.Parse(message);
-        RotateAmount = new Vector3(value, value, value);
+        //RotateAmount = new Vector3(value, value, value);
+        RotateValue = value;
     }
+
+
+    // This method is called from Unity
+    public void SetRotationSpeed2(float message)
+    {
+        RotateValue = message;
+    }
+
 }
