@@ -1,0 +1,21 @@
+{
+    "floors": [
+      {        
+        "devices":[
+            {"name": "exhaust01", "type":"EXHAUST", "val": 0 },
+            {"name": "tv01", "type":"TV", "val": false },
+            {"name": "tubelight01", "type":"TUBELIGHT", "val": 0 },
+            {"name": "tubelight02", "type":"TUBELIGHT", "val": 0 },
+            {"name": "ac01", "type":"AC", "val": 21 },
+            {"name": "fan01", "type":"FAN", "val": 0.5 },
+            {"name": "bulb01", "type":"BULB", "val": 0 },
+            {"name": "ftlight01", "type":"FTLIGHT", "val": 0 },
+            {"name": "ftpump01", "type":"FTPUMP", "val": 0.5 }
+                            
+        ],
+    "infra": [
+
+        ]
+      }
+    ]
+}

@@ -1,0 +1,87 @@
+{
+   
+    "message": "Device details",
+    "response": {
+      "device_groups": [
+        {
+          "device_room": "Test Room",
+          "device_sensors": [
+            {
+                "device_id": "1",
+                "device_name": "Exhaust",
+                "bridge_name": "Exhaust 1",
+                "device_type": "EXHAUST",
+                "device_power": 100.0,
+                "device_value": "40",
+                "device_state": false,
+                "device_topic": "device/excited/1"
+              },
+              {
+                "device_id": "2",
+                "device_name": "Tv",
+                "bridge_name": "Tv 2",
+                "device_type": "TV",
+                "device_power": 100.0,
+                "device_value": "40",
+                "device_state": false,
+                "device_topic": "device/excited/2"
+              },
+              {
+                "device_id": "3",
+                "device_name": "Tubelight",
+                "bridge_name": "TubeLight 3",
+                "device_type": "LIGHT",
+                "device_power": 40.0,
+                "device_value": "40",
+                "device_state": true,
+                "device_topic": "device/excited/3"
+              },
+              {
+                "device_id": "4",
+                "device_name": "Tubelight",
+                "bridge_name": "TubeLight 4",
+                "device_type": "LIGHT",
+                "device_power": 40.0,
+                "device_value": "1",
+                "device_state": true,
+                "device_topic": "device/excited/4"
+              },
+              {
+                "device_id": "5",
+                "device_name": "Fan",
+                "bridge_name": "Fan 5",
+                "device_type": "FAN",
+                "device_power": 100.0,
+                "device_value": "0.75",
+                "device_state": false,
+                "device_topic": "device/excited/5"
+              },
+              {
+                "device_id": "6",
+                "device_name": "Air Conditioner",
+                "bridge_name": "Air Conditioner 6",
+                "device_type": "AC",
+                "device_power": 200.0,
+                "device_value": "40",
+                "device_state": true,
+                "device_topic": "device/excited/6"
+              },
+              {
+                "device_id": "7",
+                "device_name": "Bulb",
+                "bridge_name": "Bulb 7",
+                "device_type": "BULB",
+                "device_power": 100.0,
+                "device_value": "40",
+                "device_state": false,
+                "device_topic": "device/excited/7"
+              }
+          ],
+          "device_count": 4
+        }
+      ],
+      "device_total": 66,
+      "device_active": 19
+    },
+    "response_code": 200
+  }
