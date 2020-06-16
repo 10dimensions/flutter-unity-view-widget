@@ -1,6 +1,7 @@
 ﻿using System;
 using UnityEngine;
 using UnityEngine.EventSystems;
+using SimpleJSON;
 
 public class Rotate2 : MonoBehaviour, IEventSystemHandler
 {   
@@ -98,6 +99,18 @@ public class Rotate2 : MonoBehaviour, IEventSystemHandler
         float value = float.Parse(message);
         //RotateValue = value;
     }
+	
+	public void SetDeviceValue(String message)
+	{	
+		//string[] messages = message.Split(", ");
+		JSONNode JsonData = JSON.Parse( message );
+		
+		var id = JsonData["id"].AsInt;
+		var val = JsonData["val"];
+		
+		DeviceValues[id] = val.AsFloat;
+		DataI.DeviceList[id]["device_value"] = val;
+	}
 
     // This method is called from Unity
     public void SwitchLightOn(String message)
@@ -109,7 +122,7 @@ public class Rotate2 : MonoBehaviour, IEventSystemHandler
 
     // This method is called from Unity
     public void SetRotationVelocity(float message)
-    {
+    {	
         DeviceValues[4] = message;
         DataI.DeviceList[4]["device_value"] = DeviceValues[4].ToString();
 

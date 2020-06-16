@@ -18,11 +18,22 @@ public class DataManager: MonoBehaviour
         IotI.SetActive(true);
 
     }
+	
+	public void GetJSONString(string message)
+    {
+        JsonData = JSON.Parse( message );
+        DeviceList = JsonData["response"]["device_groups"][0]["device_sensors"];
+
+        IotI.SetActive(true);
+
+    }
 
     public string LoadResourceTextfile(string path)
     {
         string filePath = "" + path.Replace(".json", "");
         TextAsset targetFile = Resources.Load<TextAsset>(filePath);
+		
+		Debug.Log(targetFile.text);
         return targetFile.text;
     }
 
